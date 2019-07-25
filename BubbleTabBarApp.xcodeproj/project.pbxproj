@@ -13,6 +13,7 @@
 		4C69816122EA47900086B63A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C69815F22EA47900086B63A /* Main.storyboard */; };
 		4C69816322EA47940086B63A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C69816222EA47940086B63A /* Assets.xcassets */; };
 		4C69816622EA47940086B63A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C69816422EA47940086B63A /* LaunchScreen.storyboard */; };
+		4C69817222EA4BF50086B63A /* BubbleTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C69817122EA4BF50086B63A /* BubbleTabBarButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4C69816222EA47940086B63A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C69816522EA47940086B63A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C69816722EA47940086B63A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C69817122EA4BF50086B63A /* BubbleTabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleTabBarButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		4C69814D22EA47900086B63A = {
 			isa = PBXGroup;
 			children = (
+				4C69817022EA4BD00086B63A /* BubbleTabBar */,
 				4C69815822EA47900086B63A /* BubbleTabBarApp */,
 				4C69815722EA47900086B63A /* Products */,
 			);
@@ -65,6 +68,14 @@
 				4C69816722EA47940086B63A /* Info.plist */,
 			);
 			path = BubbleTabBarApp;
+			sourceTree = "<group>";
+		};
+		4C69817022EA4BD00086B63A /* BubbleTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4C69817122EA4BF50086B63A /* BubbleTabBarButton.swift */,
+			);
+			path = BubbleTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				4C69815E22EA47900086B63A /* ViewController.swift in Sources */,
 				4C69815A22EA47900086B63A /* AppDelegate.swift in Sources */,
+				4C69817222EA4BF50086B63A /* BubbleTabBarButton.swift in Sources */,
 				4C69815C22EA47900086B63A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +306,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.academy.BubbleTabBarApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.academy.BubbleTabBarApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
